@@ -28,7 +28,7 @@ public class Ejercicio14 {
         // Calculo de las distancias
         double distanciaFlemingMoreda = radioTierra * Math.acos(Math.sin(Math.toRadians(latFleming)) * Math.sin(Math.toRadians(latMoreda)) + Math.cos(Math.toRadians(latFleming)) * Math.cos(Math.toRadians(latMoreda)) * Math.cos(Math.toRadians(longMoreda) - Math.toRadians(longFleming)));
 
-        // Resultado: 23,261 KM
+        // Resultado: 23,352 KM
         System.out.printf("La distancia entre el IES Fleming y mi casa de Moreda es de %.3f KM", distanciaFlemingMoreda);
 
         sc.close();
