@@ -5,10 +5,10 @@ public class Ejercicio14 {
     public static void main(String[] args){
         /*
         LATITUDES Y LONGITUDES DE LOS PUNTOS (Fleming y mis dos viviendas)
-        latFleming = 43.35781;
-        longFleming = -5.85569;
-        latMoreda = 43.16736;
-        longMoreda = -5.73686;
+        latFleming = 43,35781;
+        longFleming = -5,85569;
+        latMoreda = 43,16736;
+        longMoreda = -5,73686;
         */
 
         final double radioTierra = 6371.01;
