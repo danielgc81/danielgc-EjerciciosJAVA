@@ -4,12 +4,11 @@ import java.util.Scanner;
 
 public class Ejercicio14 {
     public static void main(String[] args){
-        //Escribe un programa que lea las edades de varios alumnos y calcule los datos siguientes:
-        //• La suma de todas las edades.
-        //• La edad media.
-        //• El número de alumnos menores de edad.
-        //Los resultados se mostrarán después de introducir el último dato y pulsar la combinación de teclas
-        //ctrl+d
+        // Escribe un programa que lea las edades de varios alumnos y calcule los datos siguientes:
+        //      • La suma de todas las edades.
+        //      • La edad media.
+        //      • El número de alumnos menores de edad.
+        // Los resultados se mostrarán después de introducir el último dato y pulsar la combinación de teclas ctrl+d
 
         Scanner sc = new Scanner(System.in);
         int sumaEdades = 0;
