@@ -29,7 +29,7 @@ public class Ejercicio20 {
             for (int j = 0; j < g; j++) {
                 System.out.print("  ");
             }
-            for (int h = num - g; h > 0; h--) {
+            for (int h = 0; h < num - g; h++) {
                 System.out.print(" *");
             }
             System.out.println();
