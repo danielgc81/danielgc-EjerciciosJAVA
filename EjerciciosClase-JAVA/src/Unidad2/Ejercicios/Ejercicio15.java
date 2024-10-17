@@ -17,7 +17,7 @@ public class Ejercicio15 {
 
     public static void main(String[] args){
         int multiplicacionImpares = 1;
-        for (int i = 1; i < 400000 ; i++) {
+        for (int i = 1; i < 200000 ; i++) {
             if (!esPar(i)) {
                 multiplicacionImpares *= i;
                 System.out.println("Numero: " + i + "\t Producto: " + multiplicacionImpares);
