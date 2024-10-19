@@ -33,6 +33,7 @@ public class Ejercicio18 {
         }
         return respuesta;
     }
+
     static String tabla2 () {
         Scanner sc = new Scanner(System.in);
         int contadorFallos = 0;
@@ -276,6 +277,7 @@ public class Ejercicio18 {
             }
         }
     }
+
     public static void main(String[] args) {
         System.out.println("MEMORIZATE LA TABLA DE MULTIPLICAR DEL 1 AL 9 CON ESTE PROGRAMA");
         elegirOpcion();
