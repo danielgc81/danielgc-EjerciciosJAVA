@@ -15,17 +15,34 @@ public class Ejercicio22 {
         while (true) {
             System.out.println("¿Cuantos lanzamientos de moneda deseas realizar?");
             int lanzamientos = sc.nextInt();
+            int caraCantidad = 0;
+            int cruzCantidad = 0;
 
             for (int i = 1; i <= lanzamientos; i++){
                 double n = Math.random();
                 if (n < 0.5) {
                     System.out.println(cara);
+                    caraCantidad++;
                 } else if (n > 0.5){
                     System.out.println(cruz);
+                    cruzCantidad++;
+                }
+            }
+
+            if (caraCantidad == cruzCantidad) {
+                double n = Math.random();
+                if (n < 0.5) {
+                    System.out.println(cara);
+                    caraCantidad++;
+                } else if (n > 0.5){
+                    System.out.println(cruz);
+                    cruzCantidad++;
                 }
             }
 
             System.out.println();
+            System.out.println("Cara: " + caraCantidad + "\t Cruz: " + cruzCantidad);
+
             System.out.println("¿Deseas repetir lanzamientos? (Cualquier número: Si, 0: No)");
             int respuesta = sc.nextInt();
 
