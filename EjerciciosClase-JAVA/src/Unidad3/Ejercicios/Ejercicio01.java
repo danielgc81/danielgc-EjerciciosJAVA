@@ -21,15 +21,15 @@ public class Ejercicio01 {
             // charAt (Obtiene el valor de la posición del caracter de un String)
             char caracter = txt.charAt(x);
 
-            if (caracter == 'a') {
+            if (caracter == 'a' || caracter == 'A') {
                 a++;
-            } else if (caracter == 'e') {
+            } else if (caracter == 'e' || caracter == 'E') {
                 e++;
-            } else if (caracter == 'i') {
+            } else if (caracter == 'i' || caracter == 'I') {
                 i++;
-            } else if (caracter == 'o') {
+            } else if (caracter == 'o' || caracter == 'O') {
                 o++;
-            } else if (caracter == 'u') {
+            } else if (caracter == 'u' || caracter == 'U') {
                 u++;
             }
         }
