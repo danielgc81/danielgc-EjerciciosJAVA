@@ -34,5 +34,7 @@ public class Ejercicio08 {
 
         System.out.println(insertarStrings( s1, s2, i));
         System.out.println(insertarStrings2( s1, s2, i));
+
+        sc.close();
     }
 }
