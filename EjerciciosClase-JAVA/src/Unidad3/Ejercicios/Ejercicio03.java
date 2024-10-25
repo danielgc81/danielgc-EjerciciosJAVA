@@ -18,9 +18,13 @@ public class Ejercicio03 {
 
         while ((indice = txt.indexOf(txtContenido, indice)) != -1) {
             contador++;
-            indice += txtContenido.length();
+            indice++;
         }
 
-        System.out.println("Esta " + contador + " veces contenida en el texto");
+        if (contador == 1) {
+            System.out.println("Esta 1 vez contenida en el texto");
+        } else {
+            System.out.println("Esta " + contador + " veces contenida en el texto");
+        }
     }
 }
