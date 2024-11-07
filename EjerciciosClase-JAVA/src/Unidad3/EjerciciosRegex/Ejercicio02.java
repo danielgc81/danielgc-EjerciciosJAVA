@@ -20,7 +20,7 @@ public class Ejercicio02 {
       */
 
       Scanner sc = new Scanner(System.in);
-      Pattern pattern = Pattern.compile("[A-Z][a-z]+");
+      Pattern pattern = Pattern.compile("([A-Z][a-z]+|[A-Z][a-z]+ [A-Z][a-z]+)");
       System.out.println("texto: ");
       String nombre = sc.nextLine();
       
