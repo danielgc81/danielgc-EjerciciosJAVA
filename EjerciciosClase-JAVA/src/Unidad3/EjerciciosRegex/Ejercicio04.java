@@ -1,6 +1,5 @@
 package Unidad3.EjerciciosRegex;
 
-import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
