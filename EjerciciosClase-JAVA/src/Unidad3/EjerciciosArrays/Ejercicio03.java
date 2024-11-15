@@ -27,11 +27,9 @@ public class Ejercicio03 {
       int tamañoArr = sc.nextInt();
 
       while (tamañoArr < 10 || tamañoArr > 1000000 ) {
-         if (tamañoArr < 10 || tamañoArr > 1000000){
-            System.out.println("El tamaño del vector debe ser entre 10 y 1000000");
-            System.out.println("Introduce el tamaño del vector (entre 10 y 1000000)");
-            tamañoArr = sc.nextInt();
-         }
+         System.out.println("El tamaño del vector debe ser entre 10 y 1000000");
+         System.out.println("Introduce el tamaño del vector (entre 10 y 1000000)");
+         tamañoArr = sc.nextInt();
       }
 
       int[] arr = new int[tamañoArr];
@@ -50,8 +48,8 @@ public class Ejercicio03 {
       System.out.printf("Se ha tardado %.3f segundos en rellenar el vector\n", segundos); // Mostrar en consola
 
       double tiempoInicial2 = System.currentTimeMillis();
-      int numMin = 0;
-      int numMax = 0;
+      int numMin = 2000;
+      int numMax = -2000;
       
       for (int i = 0; i < arr.length; i++) {
          if (arr[i] < numMin) {
