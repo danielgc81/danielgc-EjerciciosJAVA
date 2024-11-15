@@ -1,6 +1,5 @@
 package Unidad3.EjerciciosArrays;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class Ejercicio02 {
@@ -21,7 +20,7 @@ public class Ejercicio02 {
       for (int i = 0; i < arr.length; i++) {
          int nRandom, j;
          do {
-            nRandom = r.nextInt(200) - 100;
+            nRandom = r.nextInt(201) - 100;
             j = 0;
             while (j < i && nRandom != arr[j]) {
                j++;
