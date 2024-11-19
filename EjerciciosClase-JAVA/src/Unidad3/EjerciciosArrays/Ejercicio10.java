@@ -39,6 +39,19 @@ public class Ejercicio10 {
       return v;
    }
 
+   static int[][] sumaFilasColumnas(int[][] m) {
+      int[][] s = new int[2][];
+      s[0] = new int[m.length];
+      s[1] = new int[m[0].length];
+      for(int i = 0; i < m.length; i++) {
+         for(int j = 0;j < m[i].length; j++) {
+            s[0][i] += m[i][j];
+            s[1][j] += m[i][j];
+         }
+      }
+      return s;
+   }
+
    public static void main(String[] args) {
       Random r = new Random();
       int filas = r.nextInt(19) +2;
