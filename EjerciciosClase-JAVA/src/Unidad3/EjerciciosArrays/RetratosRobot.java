@@ -41,9 +41,12 @@ public class RetratosRobot {
             System.out.println(f + " - " + opciones[i][f]);
          }
 
-            System.out.println("Elige una opción:");
+            System.out.println("Elige una opción (1 a " + (opciones[i].length - 1) + "):");
             op = Integer.parseInt(in.readLine());
-            return opciones[i][op];
-      } while (op < 1 || op > 4);
+				if (op < 1 || op > (opciones[i].length - 1) ) {
+					System.out.println("Opcion incorrecta, intentalo de nuevo");
+				}
+		} while (op < 1 || op > 4);
+		return opciones[i][op];
 	}
 }
