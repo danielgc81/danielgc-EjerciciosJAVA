@@ -4,6 +4,12 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Ejercicio14 {
+   /*
+      Programa que cree dos vectores de números enteros, cada uno de ellos de una longitud aleatoria entre
+      10 y 100, los rellene con valores aleatorios, los ordene, los mezcle ordenados en un tercer vector y
+      finalmente muestre el contenido de los tres vectores.
+   */
+
    static void intercambioDirecto (int[] v) {
       for (int i = 0; i < v.length; i++) {
          for (int j = v.length - 1; j > i; j--) {
