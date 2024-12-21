@@ -2,7 +2,7 @@ package Unidad4.CreacionClases;
 
 import java.time.LocalDate;
 
-public class pruebaAnimal {
+public class PruebaAnimal {
    public static void main(String[] args) {
       Animal animal = new Animal("Pepe");
       Animal animal2 = new Animal("Ñu", LocalDate.of(2012, 11, 04));
