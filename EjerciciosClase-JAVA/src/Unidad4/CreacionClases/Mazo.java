@@ -15,8 +15,14 @@ public class Mazo {
       }
    }
 
-   public Mazo(ArrayList<Naipe> baraja) {
-      this.baraja = baraja;
+   public Mazo(int n) {
+      for (int i = 0; i < n; i++) {
+         for (Naipe.Palo palo : Naipe.Palo.values()) {
+            for (Naipe.Rango rango : Naipe.Rango.values()) {
+               baraja.add(new Naipe(palo, rango));
+            }
+         }
+      }
    }
 
    public ArrayList<Naipe> getBaraja() {
@@ -27,12 +33,19 @@ public class Mazo {
       return baraja.get(naipe);
    }
 
-   public Naipe retirar () {
-      Random r = new Random();
+   public Naipe retirarRandomNaipe () {
       int naipeAleatorio = r.nextInt(baraja.size());
       Naipe naipe = baraja.get(naipeAleatorio);
       baraja.remove(naipeAleatorio);
       return naipe;
+   }
+
+   public void retirar (Naipe naipe) {
+      baraja.remove(naipe);
+   }
+
+   public boolean estaVacio () {
+      return baraja.isEmpty();
    }
 
    public Naipe agregar (Naipe.Palo palo, Naipe.Rango rango) {

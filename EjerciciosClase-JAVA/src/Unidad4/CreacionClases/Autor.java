@@ -13,6 +13,11 @@ public class Autor {
       this.fechaNacimiento = fechaNacimiento;
    }
 
+   public Autor (String nombre, String email) {
+      this.nombre = nombre;
+      this.email = email;
+   }
+
    public String getNombre () {
       return nombre;
    }
