@@ -14,7 +14,7 @@ public class PruebaAutomovil {
          String modelo = datosSeparados[0];
          int capacidadDeposito = Integer.parseInt(datosSeparados[1]);
          int cantidadCombustible = Integer.parseInt(datosSeparados[2]);
-         int consumoPorKm = Integer.parseInt(datosSeparados[3]);
+         float consumoPorKm = Float.parseFloat(datosSeparados[3]);
          autos.add(new Automovil(modelo, capacidadDeposito, cantidadCombustible, consumoPorKm));
       }
 

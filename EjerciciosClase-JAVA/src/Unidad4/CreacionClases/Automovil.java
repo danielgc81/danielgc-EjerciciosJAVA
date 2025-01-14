@@ -4,18 +4,18 @@ public class Automovil {
    private String modelo;
    private int capacidadDeposito;
    private int cantidadCombustible;
-   private int consumoPorKm;
+   private float consumoPorKm;
    private int kmRecorridos = 0;
    private int combustibleConsumido = 0;
 
-   public Automovil (String modelo, int capacidadDeposito, int cantidadCombustible, int consumoPorKm) {
+   public Automovil (String modelo, int capacidadDeposito, int cantidadCombustible, float consumoPorKm) {
       this.modelo = modelo;
       this.capacidadDeposito = capacidadDeposito;
       this.cantidadCombustible = cantidadCombustible;
       this.consumoPorKm = consumoPorKm;
    }
 
-   public Automovil (String modelo, int capacidadDeposito, int consumoPorKm) {
+   public Automovil (String modelo, int capacidadDeposito, float consumoPorKm) {
       this.modelo = modelo;
       this.capacidadDeposito = capacidadDeposito;
       this.consumoPorKm = consumoPorKm;
@@ -34,7 +34,7 @@ public class Automovil {
       return cantidadCombustible;
    }
 
-   public int getConsumoPorKm() {
+   public float getConsumoPorKm() {
       return consumoPorKm;
    }
 
