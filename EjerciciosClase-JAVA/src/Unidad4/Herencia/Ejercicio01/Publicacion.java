@@ -47,6 +47,6 @@ public class Publicacion {
 
    @Override
    public String toString () {
-      return "";
+      return "Publicacion [" + this.codigo + "," + this.titulo + "," + this.año + "]";
    }
 }
