@@ -4,6 +4,6 @@ public interface Empleado {
    public String getNombre();
    public String getApellidos();
    public String getFechaContratacion();
-   public int getNumeroCuentaBancaria();
-   public void setNumeroCuentaBancaria(int numeroCuentaBancaria);
+   public int getNumeroCuenta();
+   public void setNumeroCuenta(int numeroCuentaBancaria);
 }
