@@ -3,7 +3,7 @@ package Unidad4.Herencia.Ejercicio01;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Publicacion {
+public class Publicacion implements Comparable<Publicacion> {
    private int codigo;
    private String titulo;
    private int año;
@@ -48,5 +48,10 @@ public class Publicacion {
    @Override
    public String toString () {
       return "Publicacion [" + this.codigo + "," + this.titulo + "," + this.año + "]";
+   }
+
+   @Override
+   public int compareTo(Publicacion o) {
+      return this.titulo.compareTo(o.titulo);
    }
 }

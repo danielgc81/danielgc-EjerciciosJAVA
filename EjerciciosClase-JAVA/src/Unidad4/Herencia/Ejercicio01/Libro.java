@@ -1,9 +1,10 @@
 package Unidad4.Herencia.Ejercicio01;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Objects;
 
-public class Libro extends Publicacion implements Prestable{
+public class Libro extends Publicacion implements Prestable {
    private ArrayList<String> autores;
    private boolean estaPrestado;
 
@@ -11,7 +12,7 @@ public class Libro extends Publicacion implements Prestable{
       super(codigo, titulo, año);
       this.estaPrestado = false;
    }
-   
+
    public Libro(int codigo, String titulo, String... autores) {
       super(codigo, titulo);
       this.estaPrestado = false;
@@ -69,4 +70,36 @@ public class Libro extends Publicacion implements Prestable{
    public String toString () {
       return "Libro [" + getCodigo() + "," + getTitulo() + "," + getAño() + "," + getAutores() + "]";
    }
+
+   @Override
+	public int compareTo(Publicacion o) {
+      if (this == o) {
+         return 0;
+      }
+      int resultado = super.compareTo(o);
+      if (resultado == 0) {
+         if (getClass() != o.getClass()) {
+            return autoresComparator.compare(this.autores, ((Libro)o).autores);
+         } else {
+            return getClass().getName().compareTo(o.getClass().getName());
+         }
+      }
+      return resultado;
+	}
+
+   static Comparator<ArrayList<String>> autoresComparator = new Comparator<>() {
+		@Override
+		public int compare(ArrayList<String> o1, ArrayList<String> o2) {
+			int min = Integer.min(o1.size(), o2.size());
+			int i = 0;
+			int resultado;
+			while ((resultado = o1.get(i).compareTo(o2.get(i))) == 0 && i < min)
+				i++;
+			if (resultado == 0 && i == o1.size())
+				return -1;
+			else if (resultado == 0 && i == o2.size())
+				return 1;
+			return resultado;
+		}
+	};
 }
