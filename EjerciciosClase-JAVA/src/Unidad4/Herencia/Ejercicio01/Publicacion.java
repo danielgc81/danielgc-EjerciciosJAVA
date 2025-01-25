@@ -51,7 +51,15 @@ public class Publicacion implements Comparable<Publicacion> {
    }
 
    @Override
-   public int compareTo(Publicacion o) {
-      return this.titulo.compareTo(o.titulo);
-   }
+	public int compareTo(Publicacion o) {
+		if (this == o)
+			return 0;
+		int resultado = año - o.año;
+		if (resultado == 0) {
+			resultado = titulo.compareTo(o.titulo);
+			if (resultado == 0)
+				return codigo - o.codigo;
+		}
+		return resultado;
+	}
 }

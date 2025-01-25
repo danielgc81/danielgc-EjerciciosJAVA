@@ -48,9 +48,4 @@ public class Revista extends Publicacion {
    public String toString () {
       return "Revista[" + getCodigo() + "," + getTitulo() + "," + this.numero + "," + getAño() + "," + this.mes + "," + this.dia + "]";
    }
-
-   @Override
-   public int compareTo(Publicacion o) {
-      return this.getTitulo().compareTo(o.getTitulo());
-   }
 }
